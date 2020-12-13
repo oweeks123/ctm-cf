@@ -6,7 +6,7 @@
     margin-left: -50vw;
     margin-top: -10px;
     left: 50%;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 header {
@@ -45,7 +45,7 @@ header {
 .white-box {
     display: inline-block;
     float: left;
-    width: 500px;
+    width:  750px;
     border: 1px solid black;
     background-color: #FFFF;
     padding: 10px;
@@ -74,15 +74,20 @@ header {
             <div><a href="https://oweeks123.github.io/ctm-cf/dispo-guide.html">Disposition <br/>Guide</a></div>
             <div>DOS</div>
         </h2>
+
 </header>
+    <h2>Send comment to planning group:</h2>
 
-    <!-- Start your code here -->
-    <p class="box row-full">Disposition Guide</p>
-    <p align="center">
-        <iframe width="1000" height="500" src="https://oweeks123.github.io/ctm-cf/cf-illness-dispo" frameborder="0" scrolling="yes" allowfullscreen="yes"></iframe>
-    </div>
-
-    <!-- End your code here -->
+    <div class="white-box"><form action="mailto:upcctm@gmail.com" method="post" enctype="text/plain">
+      Name:<br>
+      <input type="text" name="name" size="50"><br>
+      Return e-mail address:<br>
+      <input type="text" name="return e-mail" size='50'><br>
+      Comment:<br>
+      <input textarea id="mytextarea" type="text" name="comment" size="50"><br><br>
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+      </form></div>
 
 
 <script>// Write JavaScript here </script></body>
