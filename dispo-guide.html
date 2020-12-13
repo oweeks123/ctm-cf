@@ -41,13 +41,27 @@ header {
 
 .background {
     background-color: #FFFACD;
-}</style>
+}
+.white-box {
+    display: inline-block;
+    float: left;
+    width: 500px;
+    border: 1px solid black;
+    background-color: #FFFF;
+    padding: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #000000;
+    text-align: left;
+}
+</style>
 
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript" src="https://getbootstrap.com/dist/js/bootstrap.js"></script>
     <link type="text/css" rel="stylesheet" href="https://getbootstrap.com/dist/css/bootstrap.css">
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>tinymce.init({ selector:'#mytextarea' });</script>
     <title>CTM CF Disposition Guide</title>
 </head>
 <body class="background"><header class="row-full">
@@ -66,9 +80,27 @@ header {
 
     <!-- Start your code here -->
     <p class="box row-full">Disposition Guide</p>
+<<<<<<< Updated upstream
   <p align="center">
         <iframe width="1000" height="500" src="https://github.com/oweeks123/ctm-cf.git" frameborder="0" scrolling="yes" allowfullscreen="yes"></iframe>
+=======
+    <p align="center">
+        <iframe width="1000" height="500" src="https://oweeks123.github.io/ctm-cf/cf-illness-dispo" frameborder="0" scrolling="yes" allowfullscreen="yes"></iframe>
+>>>>>>> Stashed changes
     </p>
+
+    <h2>Send comment to planning group:</h2>
+
+    <div class="white-box"><form action="mailto:upcctm@gmail.com" method="post" enctype="text/plain">
+      Name:<br>
+      <input type="text" name="name" size="50"><br>
+      Return e-mail address:<br>
+      <input type="text" name="return e-mail" size='50'><br>
+      Comment:<br>
+      <input textarea id="mytextarea" type="text" name="comment" size="50"><br><br>
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+      </form></div>
 
     <!-- End your code here -->
 
