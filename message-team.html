@@ -21,6 +21,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    
 }
 
 .lw {
@@ -42,10 +43,10 @@ header {
 .background {
     background-color: #FFFACD;
 }
-.white-box {
+.white-box-just {
     display: inline-block;
-    float: left;
-    width:  750px;
+    float: center;
+    width: 95%;
     border: 1px solid black;
     background-color: #FFFF;
     padding: 10px;
@@ -56,7 +57,7 @@ header {
 </style>
 
 
-
+    <!--<link type="text/css" rel="stylesheet" href="https://getbootstrap.com/dist/css/bootstrap.css">-->
     <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript" src="https://getbootstrap.com/dist/js/bootstrap.js"></script>
     <link type="text/css" rel="stylesheet" href="https://getbootstrap.com/dist/css/bootstrap.css">
@@ -73,18 +74,20 @@ header {
             <div><a href="https://oweeks123.github.io/ctm-cf/mlguide.html">Minor Injuries <br>Guide</a></div>            
             <div><a href="https://oweeks123.github.io/ctm-cf/dispo-guide.html">Disposition <br/>Guide</a></div>
             <div>DOS</div>
+            <div><a href="https://oweeks123.github.io/ctm-cf/message-team.html">Email<br>Team</a></div>
         </h2>
 
 </header>
-    <h2>Send comment to planning group:</h2>
+    <h2>Send comment to planning team:</h2>
 
-    <div class="white-box"><form action="mailto:upcctm@gmail.com" method="post" enctype="text/plain">
+    <div class="white-box-just"><form action="mailto:upcctm@gmail.com" method="post" enctype="text/plain">
       Name:<br>
       <input type="text" name="name" size="50"><br>
       Return e-mail address:<br>
       <input type="text" name="return e-mail" size='50'><br>
+      <br>
       Comment:<br>
-      <input textarea id="mytextarea" type="text" name="comment" size="50"><br><br>
+      <input textarea id="mytextarea" type="text" name="comment" size="500"><br>
       <input type="submit" value="Send">
       <input type="reset" value="Reset">
       </form></div>
